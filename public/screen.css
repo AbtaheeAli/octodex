@@ -11,11 +11,38 @@ body {
   min-height: 100%;
 }
 
-header ul {
+header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+ul {
   list-style: none;
+}
+
+.left-header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.right-header ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  padding-top: .5rem;
+}
+
+li+li {
+  margin-left: 1rem;
+  ;
 }
 
 .cat img {
