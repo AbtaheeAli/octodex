@@ -7,9 +7,14 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 7.5rem;
+}
+
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(246, 247, 248)
 }
 
 header {
@@ -41,7 +46,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding-right: 2rem;
-  padding-top: .5rem;
+  padding-top: .9rem;
 }
 
 li+li {
@@ -58,13 +63,32 @@ a:hover {
   color: rgb(37, 41, 46)
 }
 
-a:active {
-  text-decoration: none;
-  color: red;
+article {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
 }
 
-.cat img {
-  padding-top: 5rem;
-  height: 70%;
-  width: 20%;
+section {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.content-image {
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(221, 224, 229);
+  border-radius: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  max-height: 450px;
+  max-width: 450px;
+}
+
+.cat-info ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 0rem;
 }
