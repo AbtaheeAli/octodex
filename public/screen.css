@@ -42,6 +42,7 @@ ul {
   flex-direction: row;
   align-items: center;
   padding-left: 2rem;
+  padding-right: 4rem;
 }
 
 .right-header ul {
@@ -65,7 +66,7 @@ a:hover {
 }
 
 .title:hover {
-  color: blue;
+  color: rgb(38, 104, 207);
 }
 
 article {
@@ -102,4 +103,16 @@ section {
 
 .title {
   font-weight: bold;
+}
+
+footer p {
+  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+footer div {
+  border-top: .1px solid rgb(226, 228, 232);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
