@@ -22,8 +22,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(255, 255, 255, .8);
-  border-bottom: 2px solid;
+  border-bottom: 2px solid rgb(213, 214, 214);
   box-shadow: 0 .5rem .5rem rgb(239, 240, 242, 0.3);
+  width: auto;
+  height: 70px;
   position: fixed;
   left: 0;
   right: 0;
@@ -60,7 +62,10 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: underline;
-  color: rgb(37, 41, 46)
+}
+
+.title:hover {
+  color: blue;
 }
 
 article {
@@ -93,4 +98,8 @@ section {
   align-items: center;
   flex-direction: row;
   padding-left: 0rem;
+}
+
+.title {
+  font-weight: bold;
 }
