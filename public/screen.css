@@ -23,9 +23,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255, .8);
+  background-color: rgb(255, 255, 255, 0.8);
   border-bottom: 1px solid rgb(213, 214, 214);
-  box-shadow: 0 .5rem .5rem rgb(239, 240, 242, 0.3);
+  box-shadow: 0 0.5rem 0.5rem rgb(239, 240, 242, 0.3);
   width: auto;
   height: 65px;
   position: fixed;
@@ -57,16 +57,17 @@ ul {
   display: flex;
   flex-direction: row;
   padding-right: 2rem;
-  padding-top: .9rem;
+  padding-top: 0.9rem;
 }
 
-li+li {
+li + li {
   margin-left: 1rem;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
-  color: rgb(37, 41, 46)
+  color: rgb(37, 41, 46);
 }
 
 a:hover {
@@ -98,7 +99,7 @@ section {
 
 .content-image {
   background-color: rgb(255, 255, 255);
-  border: .05rem solid rgb(221, 224, 229);
+  border: 0.05rem solid rgb(221, 224, 229);
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
   max-height: 400px;
@@ -133,7 +134,7 @@ footer p {
 }
 
 footer div {
-  border-top: .1px solid rgb(226, 228, 232);
+  border-top: 0.1px solid rgb(226, 228, 232);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -165,10 +166,21 @@ footer div {
   }
 }
 
-@media (min-width: 545px) and (max-width: 1099px) {
+@media (min-width: 814px) and (max-width: 1099px) {
   article {
     width: 35%;
     height: 35%;
+  }
+  .content-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 813px) {
+  article {
+    width: 80%;
+    height: 80%;
   }
   .content-image img {
     width: 100%;
