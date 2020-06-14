@@ -87,10 +87,10 @@ section {
 .content-image {
   background-color: rgb(255, 255, 255);
   border: 0.1rem solid rgb(221, 224, 229);
-  border-radius: 0.8rem;
+  border-radius: .2rem;
   background-color: rgb(255, 255, 255);
-  max-height: 450px;
-  max-width: 450px;
+  height: 450px;
+  width: 450px;
 }
 
 .cat-info ul {
@@ -115,4 +115,10 @@ footer div {
   border-top: .1px solid rgb(226, 228, 232);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 760px) {
+  .Github {
+    display: none;
+  }
 }
