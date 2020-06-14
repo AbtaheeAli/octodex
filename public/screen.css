@@ -47,7 +47,8 @@ ul {
 }
 
 .octodex-title {
-  padding-left: 1rem;
+  margin-left: 3px;
+  font-size: 16px;
 }
 
 .right-header ul {
